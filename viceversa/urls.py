@@ -19,6 +19,6 @@ from . import views
 
 urlpatterns = [
     path('reversed/', views.reverse, name='reverse'),
-    path('', views.viceversa),
+    path('', views.viceversa, name='main'),
     
 ]

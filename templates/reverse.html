@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <h1>Your original text has {{numberofwords}} words</h1>
+        <p>{{usertext}}</p>
+        <br></br>
         <h1>Your reversed text</h1>
         <p>
             <h2>{{reversedtext}}</h2>
         </p>
+        <br></br>
+        <form action="{% url 'main' %}">
+            <input type="submit" value='Go back'>
+        </form>
     </body>
 </html>
