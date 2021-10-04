@@ -29,9 +29,7 @@
                 <div>
                     <ul class='navbar navbar-nav'>
                         <li>
-                            <a class='text-light'>
-                                About
-                            </a>
+                            <button class="btn btn-sm btn-outline-light" type="button">About</button>
                         </li>
                     </ul>
                 </div>
@@ -39,7 +37,7 @@
         </nav>
 
         <div class='container'>
-            <h1>Writer your text and get it reversed!</h1>
+            <h2>Write your text and get it reversed!</h2>
             
             <form action="{% url 'reverse' %}">
                 <textarea 
@@ -52,7 +50,7 @@
             <button type="submit" class="btn btn-success btn-lg" action="{% url 'reverse' %}">Reverse!</button>
         </div>
         </form>
-
+        
     </body>
 
 </html>

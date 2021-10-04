@@ -39,21 +39,23 @@
         </nav>
     <body>
         <div class='row'>
-            <div1 class='col-6'>
-                <h1 class='bg-info' >Original text</h1>
-                <h6 class='bg-info'>Number of words: {{numberofwords}}</h6>
-                <p class='bg-ligth'>{{usertext}}</p>
-                <p>
+            <div1 class='col-6 pt-3'>
+                <blockquote class='container'>
+                    <footer class='blockquote-footer'>Original text</footer>
+                    <footer class='blockquote-footer'>Number of words: <kbd>{{numberofwords}}</kbd></footer> 
+                    <p class='bg-secondary text-light'>{{usertext}}</p>
+                </blockquote>
+
                 
-                </p>
             </div1>
-            
-            <div class='col-6 bg-success'>
+            <div class='col-6 pt-4'>
+                <blockquote class='container'>
+                    <footer class='blockquote-footer'>Reversed text</footer>
+                    <p class='bg-success text-light'>{{reversedtext}}</p>
+                </blockquote>
+
+            </div>
     
-                <h1>Reversed text</h1>
-                <p>
-                    <p>{{reversedtext}}</p>
-                </p>
            
 
         </div>
